@@ -1,0 +1,13 @@
+name = "lean-url"
+version = "0.1.0"
+defaultTargets = ["LeanUrl"]
+testDriver = "Tests"
+
+[[lean_lib]]
+name = "LeanUrl"
+leanOptions = {autoImplicit = false}
+serverOptions = {autoImplicit = false}
+
+[[lean_lib]]
+name = "Tests"
+globs = ["Tests.+"]
